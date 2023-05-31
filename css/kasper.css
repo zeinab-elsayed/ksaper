@@ -83,7 +83,7 @@ header .container {
 /* start component */
 .main-heading {
     text-align: center;
-    padding: 100px;
+    padding: 50px;
 
 
 }
@@ -97,11 +97,14 @@ header .container {
     margin-bottom: 70px;
 
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     .main-heading h2 {
-        font-size: 30px;
+        font-size: 31px;
+
     }
 }
+
 .main-heading h2::before {
     content: "";
     position: absolute;
@@ -137,17 +140,12 @@ header .container {
 
 }
 
-@media(max-width:767px) {
-    .main-heading h2 {
-        font-size: 38px;
-    }
-}
 
 
 
 @media(max-width:767px) {
     .main-heading p {
-        margin: 0 auto -50px;
+        margin: 0 auto 15px;
         max-width: 100%;
     }
 }
@@ -295,6 +293,7 @@ header nav .form {
     .landing .text {
         width: 100%;
         top: 60%;
+        padding: 15px;
     }
 
 
@@ -309,6 +308,7 @@ header nav .form {
 @media(max-width:767px) {
     .landing .text .content {
         width: 100%;
+        margin-left: 30px;
     }
 }
 
@@ -439,6 +439,7 @@ header nav .form {
 @media(max-width:767px) {
     .services .services-container .ser-box i {
         margin-bottom: 10px;
+        padding-right: 0;
     }
 }
 
@@ -562,8 +563,14 @@ header nav .form {
 /* start portfolio */
 
 .portfolio {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px; */
+    /* padding-bottom: 100px; */
+}
+
+@media(max-width:767px){
+    .portfolio{
+        padding-top: 0;
+    }
 }
 
 .portfolio .shuffle {
@@ -657,6 +664,11 @@ header nav .form {
 
 }
 
+@media(max-width:767px){
+    .portfolio .more{
+        margin-bottom: 30px;
+    }
+}
 /* end portfolio */
 
 /* start video */
@@ -751,6 +763,7 @@ header nav .form {
 
     }
 }
+ 
 
 /* end about */
 
@@ -883,7 +896,13 @@ header nav .form {
     text-align: center;
 
 }
-
+@media(max-width:767px){
+    .our-skills .TESTIMONIALS .content{
+        padding-top: 15px;
+        padding-bottom: 40px;
+    
+    }
+}
 .our-skills .TESTIMONIALS .content img {
     width: 100px;
     border-radius: 50%;
@@ -1030,7 +1049,11 @@ header nav .form {
     padding-bottom: 20px;
 
 }
-
+@media(max-width:767px){
+    .qoute .container h3{
+        font-size: 27px;
+    }
+}
 
 .qoute .container p {
     font-size: 20px;
@@ -1045,12 +1068,13 @@ header nav .form {
     gap: 30px;
 }
 
-@media(max-width:767px){
-    .plans{
+@media(max-width:767px) {
+    .plans {
         padding-top: 70px;
         gap: 130px;
     }
 }
+
 .plans .plan {
 
     background-color: #fcfcfc;
@@ -1200,7 +1224,7 @@ header nav .form {
 .sub .container {
     position: relative;
     display: flex;
-align-items: center;
+    align-items: center;
     color: white;
 
 }
@@ -1223,7 +1247,7 @@ align-items: center;
     color: white;
     text-transform: capitalize;
     font-size: 18px;
-  }
+}
 
 .sub form i {
     left: 30px;
@@ -1252,17 +1276,19 @@ align-items: center;
     font-size: 18px;
 }
 
-.sub p{
+.sub p {
     line-height: 2;
-    margin:50px;
+    margin: 50px;iv
 }
+
 /* end sub */
 /* start contact */
 
-.content{
-    padding-top: 100px;
-    padding-bottom: 100px;
+.content {
+    padding-top: 20px;
+    /* padding-bottom: 100px; */
 }
+
 .contact .content {
 
     display: flex;
@@ -1272,33 +1298,39 @@ align-items: center;
     margin-top: -135px;
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {
     .contact .content {
         flex-direction: column;
+        margin-top: -25px;
     }
 }
-.contact .content form{
-    display:block;
-  
+
+.contact .content form {
+    display: block;
+
     flex-basis: 70%;
-  
+
 }
+
 .content form ::placeholder {
-    
+
     text-transform: capitalize;
     font-size: 18px;
-  }
-.contact .content form .main-input{
+}
+
+.contact .content form .main-input {
     margin-bottom: 30px;
     padding: 30px;
     display: block;
     border: 1px solid #ccc;
     width: 100%;
 }
-.contact .content form textarea.main-input{
-height: 200px;
+
+.contact .content form textarea.main-input {
+    height: 200px;
 }
-.contact .content form input[type="submit"]{
+
+.contact .content form input[type="submit"] {
 
     width: fit-content;
     background-color: var(--main-color);
@@ -1311,16 +1343,18 @@ height: 200px;
 }
 
 
-.info{
+.info {
     flex-basis: 25%;
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     .info {
         order: -1;
         text-align: center;
     }
 }
-.info h4{
+
+.info h4 {
     text-transform: uppercase;
     margin-bottom: 30px;
     font-weight: 500;
@@ -1328,40 +1362,41 @@ height: 200px;
 }
 
 
-.info span{
-    
-}
 
-.info .phone{
+
+.info .phone {
     display: block;
     color: #777;
     margin-bottom: 10px;
 }
 
-.info h4:nth-of-type(2){
+.info h4:nth-of-type(2) {
     margin-top: 135px;
     font-size: 21px;
 }
-@media(max-width:767px){
-    .info h4:nth-of-type(2){
+
+@media(max-width:767px) {
+    .info h4:nth-of-type(2) {
         margin-top: 40px;
     }
 }
-.info address{
+
+.info address {
     color: #777;
     line-height: 2;
     font-size: 18px;
 
 }
 
-@media(max-width:767px){
-    .info address{
+@media(max-width:767px) {
+    .info address {
         margin-bottom: 20px;
     }
 }
+
 /* end contact */
 /* start footer */
-.foter{
+.foter {
     position: relative;
     background-image: url(../images/footer\ \(1\).jpg);
     background-size: cover;
@@ -1370,7 +1405,8 @@ height: 200px;
     color: white;
     text-align: center;
 }
-.foter::before{
+
+.foter::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1380,12 +1416,12 @@ height: 200px;
     background-color: rgb(0 0 0 / 70%);
 }
 
- .container{
-    
+.container {
+
     position: relative;
 }
 
-.foter img{
+.foter img {
     margin-bottom: 50px;
     height: 40px;
 }
@@ -1399,23 +1435,67 @@ height: 200px;
 
 }
 
-.icons{
+.icons {
     font-size: 20px;
 
 }
 
-.icons i{
+.icons i {
     padding: 15px;
     margin-bottom: 20px;
     margin-top: -20px;
 
 }
-.footer .copyright{
+
+.footer .copyright {
     font-size: 20px;
     margin-top: 45px;
 
 }
-.foter span{
-color: var(--main-color);
+
+.foter span {
+    color: var(--main-color);
 }
+
 /* end footer */
+
+/* start fixed icon */
+.fixed-container {
+    position: relative;
+
+}
+
+.icon {
+    position: fixed;
+    top: 94%;
+    left: 97%;
+    transform: translate(-35%, -35%);
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    z-index: 999;
+
+} 
+
+@media(max-width:767px){
+    .icon {
+        left: 94%;
+    }
+}
+.icon:active {
+    background-color: #777;
+}
+
+.icon a {
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+/* end fixed icon */
